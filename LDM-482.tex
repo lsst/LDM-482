@@ -20,26 +20,28 @@
 
 \section{Policy}
 
-The Prototype Data Access Center (PDAC) is an LSST Data Management (DM) construction-phase engineering exercise to stand up an early prototype LSST Data Access Center service, with the ability to keep and serve one or more LSST-like datasets (e.g., simulated LSST data, LSST-reprocessed SDSS Stripe 82, single-epoch WISE catalog, etc.).
+The Prototype Data Access Center (PDAC) is an LSST Data Management (DM) construction-phase engineering exercise to stand up an early prototype LSST Data Access Center service, with the ability to keep and serve one or more LSST-like datasets (e.g., simulated LSST data, LSST-reprocessed SDSS Stripe 82 \citep{Document-15097}, single-epoch WISE catalog, etc.).
 
 Its purposes are:
 
-1. Enable an end-to-end integration of (at least) the Data Access, SUIT, and Middleware/Infrastructure components of DM into a cooperating system.
+\begin{enumerate}
+\item Enable an end-to-end integration of (at least) the Data Access, SUIT, and Middleware/Infrastructure components of DM into a cooperating system.
 
-2. Enable operational and scaling tests of the above.
+\item Enable operational and scaling tests of the above.
 
-3. Expose the Data Access (e.g., database query) and SUIT components to a limited science user community for early feedback on the
+\item Expose the Data Access (e.g., database query) and SUIT components to a limited science user community for early feedback on the
 design and implementation.
+\end{enumerate}
 
 In order to maximize the value of this exercise, and the opportunity for independent, external feedback, LSST Data Management wishes to make the PDAC available to a small number of non-project-team users.
 
 PDAC access may be granted to:
+\begin{enumerate}
+\item Project team members who specifically request it and receive approval from DM management, after consultation with the teams building and operating the components.
 
-1. Project team members who specifically request it and receive approval from DM management, after consultation with the teams building and operating the components.
-
-2. Astronomers with LSST data rights not employed by the project ("external users"), who submit an application substantively describing investigations they wish to perform, including a description of how they plan to provide technical and usability feedback to the project, and expressing their understanding that the PDAC is not a production system. The PDAC will initially only be able to accommodate a small number of external users.
-
-DM management will be responsible for the approval of all PDAC access requests. Requests by external users will be approved based on an assessment of the match between the proposed investigation and the available PDAC capabilities and resources, the likelihood that the proposed work will result in useful and actionable feedback to DM, and the requestor's preparedness for an efficient and timely execution of the proposed work. External users will submit requests for access to the PDAC semi-annually; user access to the PDAC will not automatically be continued past 6 months unless users submit a new or continuation request. The LSST DM expects to make use of the existing public LSST mailing lists as well as communication tools such as community.lsst.org in order to inform the community of this opportunity.
+\item Astronomers with LSST data rights not employed by the project (``external users''), who submit an application substantively describing investigations they wish to perform, including a description of how they plan to provide technical and usability feedback to the project, and expressing their understanding that the PDAC is not a production system. The PDAC will initially only be able to accommodate a small number of external users.
+\end{enumerate}
+DM management will be responsible for the approval of all PDAC access requests. Requests by external users will be approved based on an assessment of the match between the proposed investigation and the available PDAC capabilities and resources, the likelihood that the proposed work will result in useful and actionable feedback to DM, and the requestor's preparedness for an efficient and timely execution of the proposed work. External users will submit requests for access to the PDAC semi-annually; user access to the PDAC will not automatically be continued past 6 months unless users submit a new or continuation request. The LSST DM expects to make use of the existing public LSST mailing lists as well as communication tools such as \href{https://community.lsst.org}{\texttt{community.lsst.org}} in order to inform the community of this opportunity.
 
 The PDAC service is intended to support the development of LSST DM and is not intended to offer the service levels of a full production astronomical archive. As such, in order to avoid occupying project personnel with a large burden of low-level user support issues, the number of PDAC users needs to remain small and limited to people with suitable levels of skill and interest in contributing to the successful development of LSST DM. All PDAC users will need to understand that the service is not intended to be, nor can the DM team support, a true 24x7 service. As an engineering test facility, users should expect that the PDAC team will bring the system up and down periodically, deploy bug fixes and new features, remove unsuccessful features, and temporarily restrict access to the system for internal testing (e.g., scaling exercises).
 
@@ -47,8 +49,10 @@ The PDAC is a prototype service designed to aid in the design and construction o
 
 The PDAC in its 2016-2017 form will have access limited to people with logins on an identity management system provided by NCSA. Approved external users will be required to formally agree to an Acceptable Use Policy (AUP) covering the usual IT security issues as well as their commitment to the project's goals. As the hosting organization for the PDAC, NCSA has a particular role in determining the limits on the number of users supported and the resources provided. The AUP will be consistent with applicable NCSA security policies. The LSST project reserves the right to withdraw access at any time for a user who is not actively participating in the evaluation of the PDAC, who is not behaving in a constructive manner, or who has violated the AUP.
 
-Any publications resulting from the use of the PDAC will be subject to the LSST Publications Policy.
+Any publications resulting from the use of the PDAC will be subject to the LSST Publications Policy \citedsp{LPM-162}.
 
 Nothing in this Policy applies to access or use of data taken as part of Commissioning; the policy for those will be determined at a later date.
+
+\bibliography{lsst}
 
 \end{document}
